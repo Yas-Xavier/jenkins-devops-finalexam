@@ -1,19 +1,19 @@
 pipeline {
-    //agent any
-    agent { 'permanent' }
+    agent any
+    //agent { 'permanent' }
 
 
     environment {
         // Your SSH key credential stored in Jenkins
         SSH_KEY = credentials('controller_agent_key')
         
-        TESTING_SERVER     = "54.81.217.36"
-        STAGING_SERVER     = "13.222.177.106"
-        PRODUCTION_SERVER1 = "3.90.18.57"
-        PRODUCTION_SERVER2 = "18.212.122.126"
+        TESTING_SERVER     = "54.91.52.68"
+        STAGING_SERVER     = "98.88.255.21"
+        PRODUCTION_SERVER1 = "3.80.81.200"
+        PRODUCTION_SERVER2 = "54.161.92.111"
       
         // GitHub repo for Tic Tac Toe
-        REPO_URL = "https://github.com/Yas-Xavier/terraform-devops-finalexam"
+        REPO_URL = "https://github.com/Yas-Xavier/jenkins-devops-finalexam"
 
         // Selenium test file
         SELENIUM_SCRIPT = "selenium_test.js"
